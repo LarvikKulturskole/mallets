@@ -1,0 +1,9 @@
+Legg prosjektene (zip-filer laget med «📦 Lagre alt (zip)») i denne mappen,
+sammen med liste.json laget med «📋 Lag låtliste» i Mallets.
+
+Filnavn: små bokstaver, ingen mellomrom eller æøå – f.eks. vinterlandskap.zip
+
+Elevlenke til én låt:   https://larvikkulturskole.github.io/mallets/Mallets.html?elev&fil=sanger/vinterlandskap.zip
+Elevlenke med låtmeny: https://larvikkulturskole.github.io/mallets/Mallets.html?elev
+
+NB: Repoet er offentlig. Legg ikke ut komp eller bilder du ikke har lov til å publisere.

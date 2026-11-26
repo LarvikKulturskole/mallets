@@ -1,0 +1,3 @@
+Lydprøvene i denne mappen er hentet fra Versilian Community Sample Library (VCSL)
+https://github.com/sgossner/VCSL – lisens: CC0 1.0 (fritt til all bruk).
+De er klippet, gjort om til mono og kodet som MP3 for Mallets.

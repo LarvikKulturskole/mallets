@@ -1,0 +1,488 @@
+{
+ "version": 1,
+ "source": "Versilian Community Sample Library (VCSL), CC0 1.0 \u2013 https://github.com/sgossner/VCSL",
+ "inst": {
+  "chimes": {
+   "default": [
+    {
+     "root": 60,
+     "f": "chimes/default/60.mp3"
+    },
+    {
+     "root": 64,
+     "f": "chimes/default/64.mp3"
+    },
+    {
+     "root": 65,
+     "f": "chimes/default/65.mp3"
+    },
+    {
+     "root": 67,
+     "f": "chimes/default/67.mp3"
+    },
+    {
+     "root": 69,
+     "f": "chimes/default/69.mp3"
+    },
+    {
+     "root": 71,
+     "f": "chimes/default/71.mp3"
+    },
+    {
+     "root": 72,
+     "f": "chimes/default/72.mp3"
+    },
+    {
+     "root": 74,
+     "f": "chimes/default/74.mp3"
+    },
+    {
+     "root": 77,
+     "f": "chimes/default/77.mp3"
+    }
+   ]
+  },
+  "glock": {
+   "default": [
+    {
+     "root": 79.077,
+     "f": "glock/default/79.mp3"
+    },
+    {
+     "root": 84.117,
+     "f": "glock/default/84.mp3"
+    },
+    {
+     "root": 91.117,
+     "f": "glock/default/91.mp3"
+    },
+    {
+     "root": 96.15,
+     "f": "glock/default/96.mp3"
+    },
+    {
+     "root": 104.157,
+     "f": "glock/default/104.mp3"
+    },
+    {
+     "root": 108.242,
+     "f": "glock/default/108.mp3"
+    }
+   ]
+  },
+  "kalimba": {
+   "default": [
+    {
+     "root": 43.626,
+     "f": "kalimba/default/43.mp3"
+    },
+    {
+     "root": 44.079,
+     "f": "kalimba/default/44.mp3"
+    },
+    {
+     "root": 46.426,
+     "f": "kalimba/default/47.mp3"
+    },
+    {
+     "root": 48.983,
+     "f": "kalimba/default/49.mp3"
+    },
+    {
+     "root": 51.339,
+     "f": "kalimba/default/51.mp3"
+    },
+    {
+     "root": 53.429,
+     "f": "kalimba/default/53.mp3"
+    },
+    {
+     "root": 55.439,
+     "f": "kalimba/default/55.mp3"
+    },
+    {
+     "root": 58.571,
+     "f": "kalimba/default/58.mp3"
+    },
+    {
+     "root": 60.557,
+     "f": "kalimba/default/61.mp3"
+    },
+    {
+     "root": 63.549,
+     "f": "kalimba/default/63.mp3"
+    },
+    {
+     "root": 65.396,
+     "f": "kalimba/default/65.mp3"
+    },
+    {
+     "root": 67.169,
+     "f": "kalimba/default/67.mp3"
+    },
+    {
+     "root": 70.499,
+     "f": "kalimba/default/70.mp3"
+    },
+    {
+     "root": 73.098,
+     "f": "kalimba/default/73.mp3"
+    },
+    {
+     "root": 73.506,
+     "f": "kalimba/default/74.mp3"
+    },
+    {
+     "root": 75.154,
+     "f": "kalimba/default/75.mp3"
+    },
+    {
+     "root": 77.518,
+     "f": "kalimba/default/77.mp3"
+    },
+    {
+     "root": 79.334,
+     "f": "kalimba/default/79.mp3"
+    },
+    {
+     "root": 82.365,
+     "f": "kalimba/default/82.mp3"
+    },
+    {
+     "root": 82.574,
+     "f": "kalimba/default/83.mp3"
+    },
+    {
+     "root": 85.362,
+     "f": "kalimba/default/85.mp3"
+    },
+    {
+     "root": 87.774,
+     "f": "kalimba/default/88.mp3"
+    },
+    {
+     "root": 89.793,
+     "f": "kalimba/default/90.mp3"
+    },
+    {
+     "root": 92.131,
+     "f": "kalimba/default/92.mp3"
+    },
+    {
+     "root": 97.324,
+     "f": "kalimba/default/97.mp3"
+    }
+   ]
+  },
+  "marimba": {
+   "default": [
+    {
+     "root": 40.967,
+     "f": "marimba/default/41.mp3"
+    },
+    {
+     "root": 48.031,
+     "f": "marimba/default/48.mp3"
+    },
+    {
+     "root": 54.999,
+     "f": "marimba/default/55.mp3"
+    },
+    {
+     "root": 59.025,
+     "f": "marimba/default/59.mp3"
+    },
+    {
+     "root": 65.001,
+     "f": "marimba/default/65.mp3"
+    },
+    {
+     "root": 72.042,
+     "f": "marimba/default/72.mp3"
+    },
+    {
+     "root": 78.977,
+     "f": "marimba/default/79.mp3"
+    },
+    {
+     "root": 83.001,
+     "f": "marimba/default/83.mp3"
+    },
+    {
+     "root": 88.978,
+     "f": "marimba/default/89.mp3"
+    },
+    {
+     "root": 96.01,
+     "f": "marimba/default/96.mp3"
+    }
+   ]
+  },
+  "timp": {
+   "default": [
+    {
+     "root": 41.332,
+     "f": "timp/default/41.mp3"
+    },
+    {
+     "root": 41.906,
+     "f": "timp/default/42.mp3"
+    },
+    {
+     "root": 43.088,
+     "f": "timp/default/43.mp3"
+    },
+    {
+     "root": 44.153,
+     "f": "timp/default/44.mp3"
+    },
+    {
+     "root": 46.142,
+     "f": "timp/default/46.mp3"
+    },
+    {
+     "root": 46.969,
+     "f": "timp/default/47.mp3"
+    },
+    {
+     "root": 48.255,
+     "f": "timp/default/48.mp3"
+    },
+    {
+     "root": 48.989,
+     "f": "timp/default/49.mp3"
+    },
+    {
+     "root": 50.079,
+     "f": "timp/default/50.mp3"
+    },
+    {
+     "root": 51.132,
+     "f": "timp/default/51.mp3"
+    },
+    {
+     "root": 53.063,
+     "f": "timp/default/53.mp3"
+    },
+    {
+     "root": 54.889,
+     "f": "timp/default/55.mp3"
+    },
+    {
+     "root": 56.071,
+     "f": "timp/default/56.mp3"
+    },
+    {
+     "root": 56.862,
+     "f": "timp/default/57.mp3"
+    },
+    {
+     "root": 59.091,
+     "f": "timp/default/59.mp3"
+    },
+    {
+     "root": 60.957,
+     "f": "timp/default/61.mp3"
+    }
+   ]
+  },
+  "vibe": {
+   "hard": [
+    {
+     "root": 53.017,
+     "f": "vibe/hard/53.mp3"
+    },
+    {
+     "root": 56.99,
+     "f": "vibe/hard/57.mp3"
+    },
+    {
+     "root": 59.987,
+     "f": "vibe/hard/60.mp3"
+    },
+    {
+     "root": 63.996,
+     "f": "vibe/hard/64.mp3"
+    },
+    {
+     "root": 66.999,
+     "f": "vibe/hard/67.mp3"
+    },
+    {
+     "root": 71.001,
+     "f": "vibe/hard/71.mp3"
+    },
+    {
+     "root": 73.999,
+     "f": "vibe/hard/74.mp3"
+    },
+    {
+     "root": 77.001,
+     "f": "vibe/hard/77.mp3"
+    },
+    {
+     "root": 81.0,
+     "f": "vibe/hard/81.mp3"
+    },
+    {
+     "root": 84.001,
+     "f": "vibe/hard/84.mp3"
+    },
+    {
+     "root": 88.001,
+     "f": "vibe/hard/88.mp3"
+    }
+   ],
+   "soft": [
+    {
+     "root": 53.001,
+     "f": "vibe/soft/53.mp3"
+    },
+    {
+     "root": 57.003,
+     "f": "vibe/soft/57.mp3"
+    },
+    {
+     "root": 59.998,
+     "f": "vibe/soft/60.mp3"
+    },
+    {
+     "root": 63.996,
+     "f": "vibe/soft/64.mp3"
+    },
+    {
+     "root": 66.999,
+     "f": "vibe/soft/67.mp3"
+    },
+    {
+     "root": 71.001,
+     "f": "vibe/soft/71.mp3"
+    },
+    {
+     "root": 73.999,
+     "f": "vibe/soft/74.mp3"
+    },
+    {
+     "root": 77.001,
+     "f": "vibe/soft/77.mp3"
+    },
+    {
+     "root": 81.0,
+     "f": "vibe/soft/81.mp3"
+    },
+    {
+     "root": 84.001,
+     "f": "vibe/soft/84.mp3"
+    },
+    {
+     "root": 88.001,
+     "f": "vibe/soft/88.mp3"
+    }
+   ]
+  },
+  "xyl": {
+   "hard": [
+    {
+     "root": 67.125,
+     "f": "xyl/hard/67.mp3"
+    },
+    {
+     "root": 72.12,
+     "f": "xyl/hard/72.mp3"
+    },
+    {
+     "root": 79.136,
+     "f": "xyl/hard/79.mp3"
+    },
+    {
+     "root": 84.153,
+     "f": "xyl/hard/84.mp3"
+    },
+    {
+     "root": 91.16,
+     "f": "xyl/hard/91.mp3"
+    },
+    {
+     "root": 96.166,
+     "f": "xyl/hard/96.mp3"
+    },
+    {
+     "root": 103.206,
+     "f": "xyl/hard/103.mp3"
+    },
+    {
+     "root": 108.159,
+     "f": "xyl/hard/108.mp3"
+    }
+   ],
+   "med": [
+    {
+     "root": 67.125,
+     "f": "xyl/med/67.mp3"
+    },
+    {
+     "root": 72.126,
+     "f": "xyl/med/72.mp3"
+    },
+    {
+     "root": 79.136,
+     "f": "xyl/med/79.mp3"
+    },
+    {
+     "root": 84.153,
+     "f": "xyl/med/84.mp3"
+    },
+    {
+     "root": 91.16,
+     "f": "xyl/med/91.mp3"
+    },
+    {
+     "root": 96.167,
+     "f": "xyl/med/96.mp3"
+    },
+    {
+     "root": 103.205,
+     "f": "xyl/med/103.mp3"
+    },
+    {
+     "root": 108.154,
+     "f": "xyl/med/108.mp3"
+    }
+   ],
+   "soft": [
+    {
+     "root": 67.125,
+     "f": "xyl/soft/67.mp3"
+    },
+    {
+     "root": 72.12,
+     "f": "xyl/soft/72.mp3"
+    },
+    {
+     "root": 79.136,
+     "f": "xyl/soft/79.mp3"
+    },
+    {
+     "root": 84.153,
+     "f": "xyl/soft/84.mp3"
+    },
+    {
+     "root": 91.162,
+     "f": "xyl/soft/91.mp3"
+    },
+    {
+     "root": 96.168,
+     "f": "xyl/soft/96.mp3"
+    },
+    {
+     "root": 103.205,
+     "f": "xyl/soft/103.mp3"
+    },
+    {
+     "root": 108.159,
+     "f": "xyl/soft/108.mp3"
+    }
+   ]
+  }
+ }
+}
