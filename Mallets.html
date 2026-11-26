@@ -57,7 +57,7 @@ body.elev #play{min-width:120px}
 <label class="btn">📂 Åpne fil(er)<input type="file" id="file" multiple hidden></label>
 <button id="ex">Eksempel: Lisa gikk til skolen</button>
 <button id="toelev">👩‍🎓 Elevvisning</button>
-<label id="songw" hidden>🎵 <select id="songsel"><option value="">Velg låt …</option></select></label>
+<label id="songw" hidden>🌐 Åpne fra nettsiden <select id="songsel"><option value="">Velg låt …</option></select></label>
 <label class="btn" title="Velg zip-filene som skal ligge i mappen sanger/">📋 Lag låtliste<input type="file" id="mklist" accept=".zip" multiple hidden></label>
 <button id="pack">📦 Lagre alt (zip)</button>
 <button class="go" id="play">▶ Spill</button>
@@ -1237,7 +1237,8 @@ async function loadSongList(){
   try{const r=await fetch('sanger/liste.json',{cache:'no-cache'});if(!r.ok)return;const j=await r.json();
     const L=(j&&Array.isArray(j.sanger)?j.sanger:[]).filter(x=>x&&typeof x.fil==='string');if(!L.length)return;
     $('songsel').innerHTML='<option value="">Velg låt …</option>'+L.map(x=>'<option value="'+esc(x.fil)+'">'+esc(x.tittel||x.fil)+(x.komponist?' – '+esc(x.komponist):'')+'</option>').join('');
-    $('songw').hidden=false;}catch(e){}}
+    $('songw').hidden=false;}catch(e){}
+  if($('songw').hidden&&location.protocol==='file:')$('songw').title='Låtene på nettsiden vises bare når Mallets åpnes fra larvikkulturskole.github.io/mallets/';}
 const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 $('songsel').onchange=async()=>{const f=$('songsel').value;if(!f)return;msg('Henter '+f+' …');
   try{const r=await fetch('sanger/'+f.split('/').map(encodeURIComponent).join('/'));if(!r.ok)throw new Error(r.status);await openFiles([new File([await r.blob()],f.split('/').pop())]);}
