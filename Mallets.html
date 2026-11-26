@@ -43,6 +43,9 @@ body.elev #play{min-width:120px}
 #eprog{flex:1;min-width:140px}
 #fsctl{display:none;position:fixed;z-index:60;right:max(10px,env(safe-area-inset-right));top:max(10px,env(safe-area-inset-top));gap:10px}
 #fsctl button{width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;border:1px solid rgba(255,255,255,.35);font-size:22px;padding:0;opacity:.75}
+#fstempo{display:flex;align-items:center;gap:8px;height:52px;padding:0 14px;border-radius:26px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.35);color:#fff;font-size:.95rem;opacity:.85}
+#fsrate{width:min(30vw,170px);accent-color:#fff}
+#fsratev{min-width:3.2em;text-align:right;font-variant-numeric:tabular-nums}
 #fsrot{display:none}
 body.fs{background:#000;padding:0;overflow:hidden;touch-action:none}
 body.fs .wrap>*:not(#cv):not(#fsctl):not(#fsrot){display:none!important}
@@ -171,7 +174,7 @@ body.fs #fsctl{display:flex}
 <div class="bar"><input type="range" id="prog" min="0" max="1000" value="0"><span id="time">0:00 / 0:00</span></div>
 <div class="bar" id="partsbar" style="display:none"><span style="font-size:.9rem;font-weight:600">Stemmer (vis på instrumentet, spill som komp, eller av):</span><div id="parts"></div></div>
 <canvas id="cv" width="1200" height="520"></canvas>
-<div id="fsctl"><button id="fsplay" title="Spill / pause">▶</button><button id="fsexit" title="Avslutt fullskjerm">✕</button></div>
+<div id="fsctl"><span id="fstempo" title="Tempo"><input type="range" id="fsrate" min="25" max="150" step="5" value="100"><span id="fsratev">100 %</span></span><button id="fsplay" title="Spill / pause">▶</button><button id="fsexit" title="Avslutt fullskjerm">✕</button></div>
 <div id="fsrot">↻ Snu telefonen for størst mulig instrument</div>
 <div id="msg"></div>
 <div class="small">Den grønne kulen viser tonen som spilles nå. Den hule ringen viser neste tone. Trommespor spilles som komp som standard. C4 er midt-C. Takt: tapp T i takt med pulsen (start på ener) – seksjoner festes da til taktstreker, så gjentakelser looper presist. Seksjoner: tast S (eller 📍) under avspilling for å merke deler; eleven velger «Spill fra» og kan gjenta en del. Opptaksmåte: «Legg til» spiller inn oppå det som finnes, «Erstatt herfra» bytter ut tonene fra der du starter til du stopper. Innspill starter låten litt før, så du kommer inn i takten. «📦 Lagre alt i én fil» lager en .mallets-fil med opptak, håndsetting, innstillinger og komp – eleven åpner bare den ene filen. Håndsetting: åpne «✋ Håndsetting», sett H/V for hver tone og lagre. Slå på «🥢 Vis køller» for å se køllene under avspilling. Instrumentbytte: trykk 📍 der i låten byttet skal skje (gjerne mens låten spilles eller tas opp). Byttene lagres i MIDI-opptaket. Velg MIDI-opptaket og komp-lydfilen samtidig i «Åpne fil(er)», så lastes begge, og instrument og rekkevidde fra opptaket brukes. Trykker du ⏺ når komp er lastet, starter kompet, og opptaket blir liggende i takt med det, også i redusert tempo. «Toneart» flytter både kompet og opptaket til en annen toneart uten å endre tempoet (for moll: velg grunntonen). «Komp starter» flytter komp-filen i tid, f.eks. hvis lydfilen har innspill før melodien begynner. Opptak: MIDI-filen inneholder det du spiller selv på stavene, lydfilen inneholder alt som høres.</div>
@@ -1112,10 +1115,11 @@ function enterFs(){document.body.classList.add('fs');$('elevset').classList.remo
   fsBtn();}
 function exitFs(){document.body.classList.remove('fs');try{screen.orientation&&screen.orientation.unlock&&screen.orientation.unlock();}catch(e){}
   const ex=document.exitFullscreen||document.webkitExitFullscreen;if((document.fullscreenElement||document.webkitFullscreenElement)&&ex)ex.call(document);fsReal=false;}
-function fsBtn(){$('fsplay').textContent=playing?'⏸':'▶';}
+function fsBtn(){$('fsplay').textContent=playing?'⏸':'▶';if(document.activeElement!==$('fsrate')){$('fsrate').value=$('rate').value;$('fsratev').textContent=$('rate').value+' %';}}
 ['fullscreenchange','webkitfullscreenchange'].forEach(ev=>document.addEventListener(ev,()=>{if(!(document.fullscreenElement||document.webkitFullscreenElement)&&fsReal)exitFs();}));
 $('efull').onclick=()=>document.body.classList.contains('fs')?exitFs():enterFs();
 $('fsexit').onclick=exitFs;
+$('fsrate').oninput=()=>{$('rate').value=$('fsrate').value;$('rate').oninput();$('fsratev').textContent=$('fsrate').value+' %';};
 $('fsplay').onclick=()=>{playing?pause():play();setTimeout(fsBtn,50);};
 setInterval(()=>{if(document.body.classList.contains('fs'))fsBtn();},500);
 addEventListener('keydown',e=>{if(e.key==='Escape'&&document.body.classList.contains('fs'))exitFs();});
