@@ -1,0 +1,255 @@
+{
+ "version": 1,
+ "source": "Versilian Studios Chamber Orchestra 2 Community Edition (VSCO-2-CE), CC0 1.0 \u2013 https://github.com/sgossner/VSCO-2-CE",
+ "note": "strings = section sustain vibrato (soft, v1), trimmed 7 s; harp = mf, trimmed 3.5 s",
+ "inst": {
+  "cello": [
+   {
+    "root": 35.99,
+    "f": "vsco/cello/36.mp3"
+   },
+   {
+    "root": 39.99,
+    "f": "vsco/cello/40.mp3"
+   },
+   {
+    "root": 43.01,
+    "f": "vsco/cello/43.mp3"
+   },
+   {
+    "root": 47.03,
+    "f": "vsco/cello/47.mp3"
+   },
+   {
+    "root": 50.01,
+    "f": "vsco/cello/50.mp3"
+   },
+   {
+    "root": 53.01,
+    "f": "vsco/cello/53.mp3"
+   },
+   {
+    "root": 57.03,
+    "f": "vsco/cello/57.mp3"
+   },
+   {
+    "root": 59.97,
+    "f": "vsco/cello/60.mp3"
+   },
+   {
+    "root": 63.97,
+    "f": "vsco/cello/64.mp3"
+   },
+   {
+    "root": 67.01,
+    "f": "vsco/cello/67.mp3"
+   },
+   {
+    "root": 71.01,
+    "f": "vsco/cello/71.mp3"
+   },
+   {
+    "root": 74.02,
+    "f": "vsco/cello/74.mp3"
+   },
+   {
+    "root": 76.97,
+    "f": "vsco/cello/77.mp3"
+   }
+  ],
+  "harp": [
+   {
+    "root": 27.83,
+    "f": "vsco/harp/28.mp3"
+   },
+   {
+    "root": 30.79,
+    "f": "vsco/harp/31.mp3"
+   },
+   {
+    "root": 34.86,
+    "f": "vsco/harp/35.mp3"
+   },
+   {
+    "root": 37.94,
+    "f": "vsco/harp/38.mp3"
+   },
+   {
+    "root": 40.93,
+    "f": "vsco/harp/41.mp3"
+   },
+   {
+    "root": 44.96,
+    "f": "vsco/harp/45.mp3"
+   },
+   {
+    "root": 48.0,
+    "f": "vsco/harp/48.mp3"
+   },
+   {
+    "root": 51.96,
+    "f": "vsco/harp/52.mp3"
+   },
+   {
+    "root": 54.91,
+    "f": "vsco/harp/55.mp3"
+   },
+   {
+    "root": 58.85,
+    "f": "vsco/harp/59.mp3"
+   },
+   {
+    "root": 61.87,
+    "f": "vsco/harp/62.mp3"
+   },
+   {
+    "root": 64.99,
+    "f": "vsco/harp/65.mp3"
+   },
+   {
+    "root": 68.91,
+    "f": "vsco/harp/69.mp3"
+   },
+   {
+    "root": 71.9,
+    "f": "vsco/harp/72.mp3"
+   },
+   {
+    "root": 75.89,
+    "f": "vsco/harp/76.mp3"
+   },
+   {
+    "root": 78.94,
+    "f": "vsco/harp/79.mp3"
+   },
+   {
+    "root": 82.92,
+    "f": "vsco/harp/83.mp3"
+   },
+   {
+    "root": 85.94,
+    "f": "vsco/harp/86.mp3"
+   },
+   {
+    "root": 88.94,
+    "f": "vsco/harp/89.mp3"
+   },
+   {
+    "root": 92.84,
+    "f": "vsco/harp/93.mp3"
+   },
+   {
+    "root": 94.92,
+    "f": "vsco/harp/95.mp3"
+   },
+   {
+    "root": 98.02,
+    "f": "vsco/harp/98.mp3"
+   },
+   {
+    "root": 101.0,
+    "f": "vsco/harp/101.mp3"
+   }
+  ],
+  "viola": [
+   {
+    "root": 48.0,
+    "f": "vsco/viola/48.mp3"
+   },
+   {
+    "root": 49.97,
+    "f": "vsco/viola/50.mp3"
+   },
+   {
+    "root": 51.98,
+    "f": "vsco/viola/52.mp3"
+   },
+   {
+    "root": 54.99,
+    "f": "vsco/viola/55.mp3"
+   },
+   {
+    "root": 59.02,
+    "f": "vsco/viola/59.mp3"
+   },
+   {
+    "root": 62.03,
+    "f": "vsco/viola/62.mp3"
+   },
+   {
+    "root": 64.99,
+    "f": "vsco/viola/65.mp3"
+   },
+   {
+    "root": 68.99,
+    "f": "vsco/viola/69.mp3"
+   },
+   {
+    "root": 71.97,
+    "f": "vsco/viola/72.mp3"
+   },
+   {
+    "root": 75.96,
+    "f": "vsco/viola/76.mp3"
+   },
+   {
+    "root": 78.97,
+    "f": "vsco/viola/79.mp3"
+   },
+   {
+    "root": 83.04,
+    "f": "vsco/viola/83.mp3"
+   },
+   {
+    "root": 86.04,
+    "f": "vsco/viola/86.mp3"
+   }
+  ],
+  "violin": [
+   {
+    "root": 54.99,
+    "f": "vsco/violin/55.mp3"
+   },
+   {
+    "root": 57.0,
+    "f": "vsco/violin/57.mp3"
+   },
+   {
+    "root": 59.01,
+    "f": "vsco/violin/59.mp3"
+   },
+   {
+    "root": 62.0,
+    "f": "vsco/violin/62.mp3"
+   },
+   {
+    "root": 65.94,
+    "f": "vsco/violin/66.mp3"
+   },
+   {
+    "root": 68.98,
+    "f": "vsco/violin/69.mp3"
+   },
+   {
+    "root": 72.01,
+    "f": "vsco/violin/72.mp3"
+   },
+   {
+    "root": 76.0,
+    "f": "vsco/violin/76.mp3"
+   },
+   {
+    "root": 79.03,
+    "f": "vsco/violin/79.mp3"
+   },
+   {
+    "root": 83.0,
+    "f": "vsco/violin/83.mp3"
+   },
+   {
+    "root": 85.98,
+    "f": "vsco/violin/86.mp3"
+   }
+  ]
+ }
+}
